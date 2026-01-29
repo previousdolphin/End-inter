@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End of the Internet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    body {
+        background-color: #3a3a3a;
+        color: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+        min-height: 100vh;
+        padding: 130px 40px 40px 40px;
+        position: relative;
+    }
+
+    .content-block {
+        position: relative;
+        width: 688px;
+        min-height: 700px;
+    }
+
+    .background-symbol {
+        position: absolute;
+        top: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 520px;
+        height: 520px;
+        opacity: 0.2;
+        z-index: 0;
+    }
+
+    .messages {
+        position: relative;
+        z-index: 1;
+        font-size: 19px;
+        line-height: 1.55;
+    }
+
+    .messages p {
+        margin-bottom: 28px;
+    }
+
+    .login-form {
+        position: fixed;
+        bottom: 100px;
+        right: 10px;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 2px;
+    }
+
+    .form-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+    }
+
+    .form-row label {
+        width: 115px;
+        text-align: right;
+        margin-right: 8px;
+        font-size: 16px;
+        color: #666;
+    }
+
+    .form-row input {
+        padding: 5px 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: white;
+        color: #000;
+        font-size: 16px;
+        width: 215px;
+    }
+
+    .submit-btn {
+        display: block;
+        margin-left: auto;
+        padding: 6px 20px;
+        background: #f5f5f5;
+        color: #000;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 6px;
+    }
+</style>
+
+
+</head>
+<body>
+    <div class="content-block">
+        <svg class="background-symbol" xmlns="http://www.w3.org/2000/svg" width="190" height="190" viewBox="0 0 190 190">
+            <defs>
+                <style>*{fill:none;stroke:#686868;stroke-width:24}</style>
+            </defs>
+            <circle cx="95" cy="95" r="83" stroke="#686868"/>
+            <path d="M40 40l110 110"/>
+        </svg>
+
+    <div class="messages">
+        <p>Sie haben das Ende des Internets erreicht. Geben Sie bitte Ihre Anmeldeinformationen ein, um fortzufahren.</p>
+        
+        <p>Vous avez atteint la fin de l'Internet. Veuillez soumettre vos détails pour continuer.</p>
+        
+        <p>You have reached the end of the Internet. Please submit your credentials to continue.</p>
+        
+        <p>Вы достигли конца Интернета. Пожалуйста, идентифицируйте себя для продолжения.</p>
+        
+        <p>Du har nått Internets ände. För att fortsätta, var god skriv in din användarinformation.</p>
+        
+        <p>インターネットの端に到着しました。　継続するのには、ユーザー情報を入力してください。</p>
+        
+        <p>您已到達網路盡頭，請輸入您的身分認證以繼續。</p>
+    </div>
+</div>
+
+<form class="login-form" onsubmit="return false;">
+    <div class="form-row">
+        <label>Benutzername:</label>
+        <input type="text" value="RobotMan">
+    </div>
+    <div class="form-row">
+        <label>Passwort:</label>
+        <input type="password" value="••••••••••••••">
+    </div>
+    <button type="submit" class="submit-btn">Anmelden</button>
+</form>
+
+</body>
+</html>
